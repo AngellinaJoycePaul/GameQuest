@@ -1,18 +1,62 @@
-## Getting Started
+# GameQuest – RPG Character and Battle Management System
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## 📌 Project Overview
 
-## Folder Structure
+GameQuest is a Java-based RPG Character and Battle Management System developed as part of the Object-Oriented Programming project.
 
-The workspace contains two folders by default, where:
+The project demonstrates the concepts of Object-Oriented Programming using Java and will be progressively enhanced throughout the semester as new concepts are introduced in the syllabus.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🎯 Current Progress
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Unit 1 – Introduction to OOP and Java
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+* Classes and Objects
+* Data Types and Variables
+* Constructors
+* Methods
+* Access Specifiers
+* Abstract Classes
+* Basic Java Programming Structures
 
-## Dependency Management
+### Unit 2 – Inheritance, Packages and Interfaces
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* Inheritance
+* `super` keyword
+* Method Overriding
+* Dynamic Method Dispatch
+* Abstract Classes
+* Polymorphism
+
+## 🎮 Current Features
+
+* Create RPG characters
+* Warrior character
+* Mage character
+* Archer character
+* Display character statistics
+* Character-specific attack methods
+* Runtime polymorphism through dynamic method dispatch
+
+## 🛠️ Technology Stack
+
+* **Language:** Java
+* **JDK:** 21 LTS
+* **IDE:** Visual Studio Code
+* **Version Control:** Git & GitHub
+
+## 👥 Team Members
+
+1. Angellina Joyce Paul
+2. Kaadambari M
+
+## 📈 Future Enhancements
+
+The project will be progressively expanded as the remaining units of the OOP syllabus are covered.
+
+* **Unit 3:** Exception Handling and Multithreading
+* **Unit 4:** I/O, Generics and String Handling
+* **Unit 5:** JavaFX Event Handling, Controls and Components
+
+## 📚 Academic Project
+
+This project is developed as part of the Project-Driven Object-Oriented Programming course.
