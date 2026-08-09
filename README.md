@@ -69,7 +69,7 @@ The project demonstrates how OOP concepts can be applied to create a structured,
 
 ## 📁 Project Structure
 
-```text
+
 GameQuest/
 │
 ├── .vscode/
@@ -100,6 +100,7 @@ GameQuest/
 - GitHub
 
 ---
+
 
 ## ▶️ How to Run
 
