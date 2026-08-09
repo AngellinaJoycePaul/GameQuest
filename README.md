@@ -69,7 +69,7 @@ The project demonstrates how OOP concepts can be applied to create a structured,
 
 ## 📁 Project Structure
 
-
+``` text
 GameQuest/
 │
 ├── .vscode/
@@ -90,7 +90,7 @@ GameQuest/
 │
 ├── .gitignore
 └── README.md
-
+```
 ## ⚙️ Technologies Used
 
 - Java
