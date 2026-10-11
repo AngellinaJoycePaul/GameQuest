@@ -34,7 +34,7 @@ GameQuest/
 ---
 
 ## OOP Concepts Demonstrated
-```
+
 | Concept | Implementation |
 |---------|----------------|
 | Abstraction | abstract class Character |
@@ -48,7 +48,7 @@ GameQuest/
 | Static Members | totalCharacters counter |
 | Inner Class | Stats inner class inside Character |
 | Final Method | displayCharacterType() |
-```
+
 ---
 
 ## How to Compile and Run
