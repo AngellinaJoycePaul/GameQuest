@@ -16,7 +16,7 @@ Three character types — Warrior, Mage, and Archer — share a common abstract 
 ---
 
 ## Project Structure
-
+```
 GameQuest/
 ├── java/
 │   └── src/
@@ -30,11 +30,11 @@ GameQuest/
 │           └── GameQuestApp.java   (entry point)
 ├── web/                            (live visualizer — coming soon)
 └── README.md
-
+```
 ---
 
 ## OOP Concepts Demonstrated
-
+```
 | Concept | Implementation |
 |---------|----------------|
 | Abstraction | abstract class Character |
@@ -48,7 +48,7 @@ GameQuest/
 | Static Members | totalCharacters counter |
 | Inner Class | Stats inner class inside Character |
 | Final Method | displayCharacterType() |
-
+```
 ---
 
 ## How to Compile and Run
@@ -61,7 +61,7 @@ From the GameQuest folder:
 ---
 
 ## Sample Output
-
+```
     =========================================
           GAMEQUEST - RPG CHARACTER BUILDER
     =========================================
@@ -80,7 +80,7 @@ From the GameQuest folder:
     Ability: Piercing Shot
 
     Total characters created: 3
-
+```
 ---
 
 ## Team
