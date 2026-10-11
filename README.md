@@ -1,163 +1,92 @@
-# 🎮 GameQuest
+# ゲームクエスト | GameQuest
 
-### An Object-Oriented Java Game Character System
+RPG Character Builder — Object Oriented Programming Project
 
-GameQuest is a Java-based character management and game system developed to demonstrate core Object-Oriented Programming (OOP) concepts through a simple game-inspired application.
-
-The project is being developed progressively alongside the OOP syllabus. New concepts and features will be added as the course progresses.
-
----
-
-## 📌 Project Overview
-
-GameQuest represents different types of game characters such as:
-
-- ⚔️ Warrior
-- 🧙 Mage
-- 🏹 Archer
-
-Each character has common properties such as name, health, and level, while also having their own specialized attributes and abilities.
-
-The project demonstrates how OOP concepts can be applied to create a structured, reusable, and extensible Java application.
+Angellina Joyce Paul | U24CS402
+Kaadambari M
 
 ---
 
-## 🎯 Objectives
+## Overview
 
-- Understand and implement core OOP concepts in Java.
-- Demonstrate inheritance and polymorphism.
-- Implement interfaces and abstract classes.
-- Practice method overloading and overriding.
-- Understand object interaction through parameters and return values.
-- Demonstrate packages, access control, and encapsulation.
-- Build the project progressively according to the course syllabus.
+GameQuest is a Java-based RPG character system that demonstrates core Object-Oriented Programming concepts through a practical character creation and combat system.
+
+Three character types — Warrior, Mage, and Archer — share a common abstract base and implement a unified ability interface.
 
 ---
 
-## 🧩 OOP Concepts Implemented
+## Project Structure
 
-### Unit 1
-
-- Classes and Objects
-- Constructors
-- Methods
-- Variables and Data Types
-- Operators
-- Control Statements
-- Access Specifiers
-- Static Members
-- JavaDoc Documentation
-
-### Unit 2
-
-- Inheritance
-- `super` Keyword
-- Method Overloading
-- Method Overriding
-- Dynamic Method Dispatch
-- Abstract Classes
-- Interfaces
-- Objects as Parameters
-- Returning Objects
-- Packages
-- Member Access
-- Inner Classes
-- `final` with Inheritance
-- Encapsulation and Getters
-
----
-
-## 📁 Project Structure
-
-``` text
 GameQuest/
-│
-├── .vscode/
-│   └── settings.json
-│
-├── src/
-│   ├── characters/
-│   │   ├── Ability.java
-│   │   ├── Archer.java
-│   │   ├── Character.java
-│   │   ├── Mage.java
-│   │   └── Warrior.java
-│   │
-│   └── main/
-│       └── GameQuestApp.java
-│
-├── lib/
-│
-├── .gitignore
+├── java/
+│   └── src/
+│       ├── characters/
+│       │   ├── Ability.java        (interface)
+│       │   ├── Character.java      (abstract base class)
+│       │   ├── Warrior.java
+│       │   ├── Mage.java
+│       │   └── Archer.java
+│       └── main/
+│           └── GameQuestApp.java   (entry point)
+├── web/                            (live visualizer — coming soon)
 └── README.md
-```
-## ⚙️ Technologies Used
-
-- Java
-- JDK 21 LTS
-- Visual Studio Code
-- Git
-- GitHub
 
 ---
 
+## OOP Concepts Demonstrated
 
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-git clone https://github.com/AngellinaJoycePaul/GameQuest.git
-
-### 2. Open the project in Visual Studio Code
-
-Open the `GameQuest` folder in VS Code.
-
-### 3. Run the application
-
-Open:
-
-src/main/GameQuestApp.java
-
-Run the Java file using the Run button in Visual Studio Code.
+| Concept | Implementation |
+|---------|----------------|
+| Abstraction | abstract class Character |
+| Inheritance | Warrior, Mage, Archer extends Character |
+| Interface | Ability interface implemented by all characters |
+| Encapsulation | Private fields with controlled getters/setters |
+| Method Overloading | displayStats() with and without prefix |
+| Method Overriding | attack() and useAbility() in each subclass |
+| Polymorphism | List<Character> holding different character types |
+| Dynamic Method Dispatch | Runtime resolution of overridden methods |
+| Static Members | totalCharacters counter |
+| Inner Class | Stats inner class inside Character |
+| Final Method | displayCharacterType() |
 
 ---
 
-## 📊 Current Progress
+## How to Compile and Run
 
-| Unit | Status |
-|---|---|
-| Unit 1 | ✅ Completed |
-| Unit 2 | ✅ Completed |
-| Unit 3 | ⏳ Upcoming |
-| Unit 4 | ⏳ Upcoming |
-| Unit 5 | ⏳ Upcoming |
+From the GameQuest folder:
+
+    javac -d bin java/src/characters/*.java java/src/main/GameQuestApp.java
+    java -cp bin main.GameQuestApp
 
 ---
 
-## 🚀 Future Enhancements
+## Sample Output
 
-As the project progresses, GameQuest will be expanded with additional concepts and features such as:
+    =========================================
+          GAMEQUEST - RPG CHARACTER BUILDER
+    =========================================
 
-- Exception Handling
-- Multithreading
-- File Handling
-- Collections
-- Advanced game mechanics
-- Character battles
-- Game menus
-- Graphical User Interface
+    [Characters Created]
+    >> Ragnar | HP: 150 | ATK: 25
+    Type: Warrior
+    Ability: Berserk
+
+    >> Elyra | HP: 100 | ATK: 20
+    Type: Mage
+    Ability: Meteor Storm
+
+    >> Kael | HP: 110 | ATK: 22
+    Type: Archer
+    Ability: Piercing Shot
+
+    Total characters created: 3
 
 ---
 
-## 👩‍💻 Project Team
+## Team
 
-**Team Members**
+Angellina Joyce Paul — U24CS402
+Kaadambari M
 
-1. Angellina Joyce Paul
-2. Kaadambari M
-
----
-
-## 📚 Academic Project
-
-This project is developed as part of the **Object-Oriented Programming using Java** course and will be progressively enhanced throughout the academic year.
+Department of Information Technology
+Object Oriented Programming with Java
