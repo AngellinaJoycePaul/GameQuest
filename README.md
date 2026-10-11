@@ -82,11 +82,3 @@ From the GameQuest folder:
     Total characters created: 3
 ```
 ---
-
-## Team
-
-Angellina Joyce Paul — U24CS402
-Kaadambari M
-
-Department of Information Technology
-Object Oriented Programming with Java
