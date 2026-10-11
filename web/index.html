@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ゲームクエスト | GameQuest</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="jp-title">ゲームクエスト</h1>
+      <h2 class="en-title">GAME<span>QUEST</span></h2>
+      <p class="tagline">RPG Character Builder — Object Oriented Programming Demo</p>
+      <div class="hero-badge">JAVA • OOP • 5 UNITS INTEGRATED</div>
+    </div>
+    <div class="halftone"></div>
+  </header>
+
+  <section class="section" id="battleStage">
+    <h3 class="section-title">◆ BATTLE STAGE</h3>
+
+    <div class="turn-indicator" id="turnIndicator">YOUR TURN</div>
+
+    <div class="stage">
+      <div class="sky"></div>
+      <div class="ground"></div>
+
+      <div class="fighter-slot left" id="slotLeft">
+        <div class="sprite-container" id="spriteLeft">
+          <div class="placeholder">No fighter</div>
+        </div>
+        <div class="sprite-info">
+          <div class="sprite-name" id="nameLeft">—</div>
+          <div class="hp-bar-wrap"><div class="hp-bar" id="hpLeft"></div></div>
+          <div class="sprite-stats" id="statsLeft">HP — / —</div>
+        </div>
+      </div>
+
+      <div class="vs-badge-stage">VS</div>
+
+      <div class="fighter-slot right" id="slotRight">
+        <div class="sprite-container" id="spriteRight">
+          <div class="placeholder">No fighter</div>
+        </div>
+        <div class="sprite-info">
+          <div class="sprite-name" id="nameRight">—</div>
+          <div class="hp-bar-wrap"><div class="hp-bar" id="hpRight"></div></div>
+          <div class="sprite-stats" id="statsRight">HP — / —</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="battle-controls">
+      <div class="control-group">
+        <label>ATTACKER</label>
+        <select id="attackerSelect"></select>
+      </div>
+      <div class="control-group">
+        <label>TARGET</label>
+        <select id="targetSelect"></select>
+      </div>
+      <div class="control-group">
+        <label>ACTION</label>
+        <div class="action-row">
+          <button id="attackBtn" class="action-btn attack">⚔ ATTACK</button>
+          <button id="abilityBtn" class="action-btn ability">✦ ABILITY</button>
+        </div>
+      </div>
+      <button id="resetBtn" class="action-btn reset">↺ RESET</button>
+    </div>
+
+    <div class="battle-log" id="battleLog">
+      <div class="log-bubble">The arena awaits combatants...</div>
+    </div>
+  </section>
+
+  <section class="section" id="roster">
+    <h3 class="section-title">◆ CHARACTER ROSTER</h3>
+    <div class="roster-grid" id="rosterGrid"></div>
+
+    <div class="create-panel">
+      <h4>＋ CREATE NEW CHARACTER</h4>
+      <input type="text" id="newName" placeholder="Enter name..." maxlength="15" />
+      <div class="type-picker">
+        <button class="type-btn warrior" data-type="Warrior">Warrior</button>
+        <button class="type-btn mage" data-type="Mage">Mage</button>
+        <button class="type-btn archer" data-type="Archer">Archer</button>
+      </div>
+      <button id="createBtn" class="action-btn">FORGE CHARACTER</button>
+    </div>
+  </section>
+
+  <section class="section" id="hierarchy">
+    <h3 class="section-title">◆ CLASS HIERARCHY</h3>
+    <div class="hierarchy-diagram">
+      <div class="node abstract">Character<br><span>(abstract)</span></div>
+      <div class="line-down"></div>
+      <div class="branches">
+        <div class="node warrior-node">Warrior</div>
+        <div class="node mage-node">Mage</div>
+        <div class="node archer-node">Archer</div>
+      </div>
+      <div class="line-down"></div>
+      <div class="node interface-node">«interface»<br>Ability</div>
+    </div>
+  </section>
+
+  <section class="section" id="analytics">
+    <h3 class="section-title">◆ ANALYTICS DASHBOARD</h3>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Total Characters</span>
+        <span class="stat-value" id="statTotal">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Damage</span>
+        <span class="stat-value" id="statDamage">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Abilities Used</span>
+        <span class="stat-value" id="statAbilities">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Attacks Fired</span>
+        <span class="stat-value" id="statAttacks">0</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>ゲームクエスト — Angellina Joyce Paul &amp; Kaadambari M</p>
+    <p class="small">U24CS402 · Object Oriented Programming with Java · Review 2</p>
+  </footer>
+
+  <div class="impact-flash" id="impactFlash"></div>
+  <div class="floating-dmg" id="floatingDmg"></div>
+
+  <div class="victory-overlay" id="victoryOverlay">
+    <div class="victory-box">
+      <h2 id="victoryTitle">VICTORY</h2>
+      <p id="victoryName"></p>
+      <button class="action-btn" id="victoryClose">CONTINUE</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
